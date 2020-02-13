@@ -1,0 +1,63 @@
+* {
+  transition: all 400ms ease;
+}
+
+.face {
+  width: 500px;
+  height: 500px;
+  background: beige;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eyes {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.eyes span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+  float: left;
+}
+
+.eyes span:first-of-type {
+  margin-right: 30px;
+}
+
+.nose {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mouth {
+  width: 200px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.face:hover .mouth {
+  width: 100px;
+}
+
+.face:hover .eyes span {
+  width: 20px;
+  height: 20px;
+}
